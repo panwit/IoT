@@ -11,8 +11,6 @@ const char* mqtt_password = "Your Secret";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
-long lastMsg = 0;
-int value = 0;
 
 void reconnect() {
   while (!client.connected()) {
