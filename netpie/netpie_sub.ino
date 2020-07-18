@@ -49,7 +49,6 @@ void callback(char* topic, byte* payload, unsigned int length) {
     }
 }
 
-
 void setup() {
   pinMode(D0,OUTPUT);
   Serial.begin(115200);
