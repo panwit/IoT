@@ -11,7 +11,6 @@ const char* mqtt_password = " Secret ";
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
-int value = 0;
 
 void reconnect() {
   while (!client.connected()) {
@@ -54,7 +53,7 @@ void loop() {
   long now = millis();
   if (now - lastMsg > 2000) {
     lastMsg = now;
-    ++value;
+    
     client.publish("@msg/test", "Hello NETPIE2020");
     Serial.println("Hello NETPIE2020");
   }
