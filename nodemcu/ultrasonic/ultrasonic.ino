@@ -1,7 +1,7 @@
 void setup() {
   Serial.begin(9600);
-  pinMode(D5, OUTPUT); // 4= Trig
-  pinMode(D6, INPUT);  // 2= Echo
+  pinMode(D5, OUTPUT); // D5 = Trig
+  pinMode(D6, INPUT);  // D6 = Echo
 }
 
 void loop() {
